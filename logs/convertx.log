@@ -1,0 +1,480 @@
+2026-03-28 14:39:45 | INFO     | convertx | Starting ConvertX Bot...
+2026-03-28 14:39:45 | INFO     | convertx | Bot is polling for updates...
+2026-03-28 14:39:49 | INFO     | convertx | Queue manager started with 3 workers
+2026-03-28 14:39:49 | INFO     | convertx | ConvertX Bot is online! 🚀
+2026-03-28 14:40:31 | INFO     | convertx | User 2020457523 (Ashwini Rai) started the bot
+2026-03-28 14:40:32 | ERROR    | convertx | Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/start_handler.py", line 70, in start_command
+    await update.message.reply_text(
+    ...<3 lines>...
+    )
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_message.py", line 2106, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<21 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 3118, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<23 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 1123, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<21 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 630, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<23 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 820, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Can't parse entities: character '-' is reserved and must be escaped with the preceding '\'
+2026-03-28 14:40:32 | ERROR    | convertx | Full traceback:
+Traceback (most recent call last):
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/start_handler.py", line 70, in start_command
+    await update.message.reply_text(
+    ...<3 lines>...
+    )
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_message.py", line 2106, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<21 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 3118, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<23 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 1123, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<21 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 630, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<23 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 820, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Can't parse entities: character '-' is reserved and must be escaped with the preceding '\'
+
+2026-03-28 14:41:48 | INFO     | convertx | Queue manager stopped
+2026-03-28 14:41:48 | INFO     | convertx | Cleaned up temp directory: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot
+2026-03-28 14:41:48 | INFO     | convertx | ConvertX Bot shut down gracefully.
+2026-03-28 14:43:01 | INFO     | convertx | Starting ConvertX Bot...
+2026-03-28 14:43:01 | INFO     | convertx | Bot is polling for updates...
+2026-03-28 14:43:02 | INFO     | convertx | Queue manager started with 3 workers
+2026-03-28 14:43:02 | INFO     | convertx | ConvertX Bot is online! 🚀
+2026-03-28 14:43:38 | INFO     | convertx | User 2020457523 (Ashwini Rai) started the bot
+2026-03-28 14:43:44 | DEBUG    | convertx | Callback from user 2020457523: img_to_pdf
+2026-03-28 14:44:08 | DEBUG    | convertx | Job queued for user 2020457523 (queue size: 1)
+2026-03-28 14:44:08 | INFO     | convertx | Converting Image → PDF: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot/600776819bba446294c659cb35f72972.jpg
+2026-03-28 14:44:10 | INFO     | convertx | Image → PDF complete: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot/8775658de8f641f3823417f41516fc71.pdf
+2026-03-28 14:44:13 | DEBUG    | convertx | Cleaned up temporary file: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot/8775658de8f641f3823417f41516fc71.pdf
+2026-03-28 14:44:13 | DEBUG    | convertx | Cleaned up temporary file: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot/600776819bba446294c659cb35f72972.jpg
+2026-03-28 14:44:33 | DEBUG    | convertx | Callback from user 2020457523: back_main
+2026-03-28 14:44:35 | ERROR    | convertx | Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/callback_handler.py", line 67, in callback_router
+    await handler(update, context)
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/start_handler.py", line 81, in show_main_menu
+    await query.edit_message_text(
+    ...<3 lines>...
+    )
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_callbackquery.py", line 269, in edit_message_text
+    return await self._get_message().edit_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_message.py", line 4243, in edit_text
+    return await self.get_bot().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 1733, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4548, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 630, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<23 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 820, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: There is no text in the message to edit
+2026-03-28 14:44:35 | ERROR    | convertx | Full traceback:
+Traceback (most recent call last):
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/callback_handler.py", line 67, in callback_router
+    await handler(update, context)
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/start_handler.py", line 81, in show_main_menu
+    await query.edit_message_text(
+    ...<3 lines>...
+    )
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_callbackquery.py", line 269, in edit_message_text
+    return await self._get_message().edit_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_message.py", line 4243, in edit_text
+    return await self.get_bot().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 1733, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4548, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 630, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<23 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 820, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: There is no text in the message to edit
+
+2026-03-28 14:44:41 | DEBUG    | convertx | Callback from user 2020457523: back_main
+2026-03-28 14:44:41 | ERROR    | convertx | Exception while handling an update:
+Traceback (most recent call last):
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/callback_handler.py", line 67, in callback_router
+    await handler(update, context)
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/start_handler.py", line 81, in show_main_menu
+    await query.edit_message_text(
+    ...<3 lines>...
+    )
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_callbackquery.py", line 269, in edit_message_text
+    return await self._get_message().edit_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_message.py", line 4243, in edit_text
+    return await self.get_bot().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 1733, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4548, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 630, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<23 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 820, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: There is no text in the message to edit
+2026-03-28 14:44:41 | ERROR    | convertx | Full traceback:
+Traceback (most recent call last):
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_application.py", line 1315, in process_update
+    await coroutine
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_handlers/basehandler.py", line 159, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/callback_handler.py", line 67, in callback_router
+    await handler(update, context)
+  File "/Users/ashwanirai/Desktop/Fileforge/bot/handlers/start_handler.py", line 81, in show_main_menu
+    await query.edit_message_text(
+    ...<3 lines>...
+    )
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_callbackquery.py", line 269, in edit_message_text
+    return await self._get_message().edit_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_message.py", line 4243, in edit_text
+    return await self.get_bot().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 1733, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 4548, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 630, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<23 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 820, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/ext/_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/ashwanirai/Desktop/Fileforge/venv/lib/python3.13/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: There is no text in the message to edit
+
+2026-03-28 14:46:13 | INFO     | convertx | Queue manager stopped
+2026-03-28 14:46:13 | INFO     | convertx | Cleaned up temp directory: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot
+2026-03-28 14:46:13 | INFO     | convertx | ConvertX Bot shut down gracefully.
+2026-03-28 14:46:27 | INFO     | convertx | Starting ConvertX Bot...
+2026-03-28 14:46:27 | INFO     | convertx | Bot is polling for updates...
+2026-03-28 14:46:28 | INFO     | convertx | Queue manager started with 3 workers
+2026-03-28 14:46:28 | INFO     | convertx | ConvertX Bot is online! 🚀
+2026-03-28 14:46:41 | DEBUG    | convertx | Callback from user 2020457523: back_main
+2026-03-28 14:46:46 | DEBUG    | convertx | Callback from user 2020457523: more_tools
+2026-03-28 14:46:50 | DEBUG    | convertx | Callback from user 2020457523: back_main
+2026-03-28 14:46:57 | DEBUG    | convertx | Callback from user 2020457523: word_to_pdf
+2026-03-28 14:47:14 | DEBUG    | convertx | Job queued for user 2020457523 (queue size: 1)
+2026-03-28 14:47:14 | INFO     | convertx | Converting DOCX → PDF: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot/88456f8dc95b4071ad233e041384bbeb.docx
+2026-03-28 14:47:14 | INFO     | convertx | DOCX → PDF complete: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot/8e8abec5c8354084817f58b5fc3e491a.pdf
+2026-03-28 14:47:15 | DEBUG    | convertx | Cleaned up temporary file: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot/8e8abec5c8354084817f58b5fc3e491a.pdf
+2026-03-28 14:47:15 | DEBUG    | convertx | Cleaned up temporary file: /var/folders/b3/3gy1x9h160g2kk1ck0gvlpp80000gn/T/convertx_bot/88456f8dc95b4071ad233e041384bbeb.docx
