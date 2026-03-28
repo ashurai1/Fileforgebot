@@ -1,11 +1,10 @@
 # ── Build stage ──────────────────────────────────────────────────────────
 FROM python:3.11-slim AS base
 
-# System deps required by PyMuPDF and python-magic
+# System deps required by pdf2docx (OpenCV)
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        libmagic1 \
-        libgl1-mesa-glx \
+        libgl1 \
         libglib2.0-0 && \
     rm -rf /var/lib/apt/lists/*
 
