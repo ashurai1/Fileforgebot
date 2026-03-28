@@ -17,11 +17,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
-# Create temp and log directories
-RUN mkdir -p logs
+# Create temp and log directories, and user, then fix permissions
+RUN mkdir -p logs && useradd -m botuser && chown -R botuser:botuser /app
 
 # Run as non-root
-RUN useradd -m botuser
 USER botuser
 
 CMD ["python", "-m", "bot.main"]
